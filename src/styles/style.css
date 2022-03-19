@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.img-thumbnail {
+    border: none;
+    padding: 0px;
+}
+
+.desc-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cursive-font {
+    font-family: 'Palette Mosaic', cursive;
+}
+
+.session-font {
+    color: black;
+    font-family: 'Alfa Slab One', sans-serif;
+}
+
+.sobre-mim {
+    border: 1px solid #5e5e5e;
+}
+
+.contact-email {
+    font-weight: 700;
+}
+
+.cargo {
+    font-size: 1.4rem;
+}
+
+.golden-focus {
+    color: #ffa938;
+}
+
+.my-name {
+    background-color: #202020;
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 5px;
+}
