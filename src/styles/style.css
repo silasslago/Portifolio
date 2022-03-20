@@ -1,9 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+#sobre-mim, #curriculo, #projetos {
+    cursor: pointer;
+}
+
+.card {
+    max-width: 18rem;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card-img-app {
+    height: 200px;
+    object-fit: cover;
+}
+
+.brown-focus {
+    color: #664A37FF;
+}
+
 .img-thumbnail {
     border: none;
     padding: 0px;
+}
+
+.socialmedia-button {
+    background-color: transparent;
+    border: none;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.socialmedia-button:hover {
+    background-color: #ffd138;
+}
+
+.socialmedia-img {
+    max-width: 60px;
+}
+
+.socialmedia-list {
+    list-style-type: none;
+}
+
+.gray-text {
+    color: #5e5e5e;
+}
+
+.img-fluid {
+    max-width: 80%;
 }
 
 .desc-text {
@@ -26,6 +74,9 @@
 
 .contact-email {
     font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
 }
 
 .cargo {

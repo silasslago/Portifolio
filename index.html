@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="bg-secondary bg-opacity-10">
@@ -16,6 +17,9 @@
         <header class="p-4">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="src/favicon.png" alt="" width="40" height="40">
+                    </a>
                     <a class="navbar-brand contact-email" href="mailto:juanfsa@live.com">&#x2709; juanfsa@live.com</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +28,13 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre mim</a>
+                                <a id="sobre-mim" class="nav-link">Sobre mim</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Projetos</a>
+                                <a id="projetos" class="nav-link">Projetos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Meu currículo</a>
+                                <a id="curriculo" class="nav-link">Meu currículo</a>
                             </li>
                         </ul>
                     </div>
@@ -39,79 +43,194 @@
         </header>
 
         <main>
-            <section class="container p-5 pb-0">
+            <section class="container p-0 pb-0">
                 <div class="row d-flex justify-content-center align-items-center">
-                    <article class="col-md-5">
-                        <small class="">Olá, eu sou</small>
-                        <h1 class="display-5 cursive-font p-1"><span class="golden-focus">SILAS</span> JUAN SANTOS <span class="golden-focus">LAGO</span></h1>
-                        <h2 class="cargo">
+                    <article class="col-9 col-md-6 col-lg-6">
+                        <small class="gray-text ms-2">Olá, eu sou</small>
+                        <h1 class="display-4 cursive-font text-uppercase">
+                            <span class="golden-focus">Silas</span>Juan
+                            Santos<span class="golden-focus">Lago</span>
+                        </h1>
+                        <h2 class="cargo ms-2">
                             Desenvolvedor Web <span class="golden-focus">Junior</span>
                         </h2>
-                        <p>
+                        <p class="ms-2">
                             Esse é o meu portifólio, sinta-se convidado a me conhecer.
                             Ficarei feliz de obter uma chance na sua empresa!
                         </p>
                     </article>
-                    <figure class="col-md-6">
+                    <figure class="col-8 col-md-5 col-lg-5">
                         <img class="img-thumbnail" src="src/images/me.png"
                             alt="Ilustração de um homem branco de óculos dourados, cabelo castanho com camisa branca, vista da cabeça até seu peito.">
                     </figure>
                 </div>
             </section>
 
-            <section class="sobre-mim container-fluid p-5 bg-warning">
-                <div class="row">
-                    <figure class="col-12 col-md-6 d-flex align-items-center">
-                        <img class="img-thumbnail" src="src/images/Silas.jpg" alt="Homem branco com oculos dourados em uma paisagem de floresta, vista com zoom no seu rosto.">
-                    </figure>
-                    <article class="col-12 col-md-6 d-flex align-items-center">
+            <section id="sobre-mim-div" class="container-fluid p-5 bg-warning">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <img class="img-fluid col-12 col-sm-10 col-md-6 col-lg-5 p-4" src="src/images/Silas.jpg"
+                        alt="Homem branco com oculos dourados em uma paisagem de floresta, vista com zoom no seu rosto.">
+                    <article class="col-12 col-lg-6 p-5">
                         <div>
                             <h2 class="session-font display-5">Sobre mim</h2>
                             <p class="desc-text">
-                                Silas nasceu em Feira de Santana - BA, e desde os 
+                                Silas nasceu em Feira de Santana - BA, e desde os
                                 quatorze anos descobriu sua paixão por tecnologia. 
-                                Começou criando pequenos projetos de jogos e logo com o tempo
-                                foi se aperfeiçoando e expandindo sua área de conhecimento.
-                                Atualmente mexe com back-end & front-end.
+                                Atualmente morando em Curitiba - PR começou criando pequenos 
+                                projetos de jogos e logo com o tempo foi se aperfeiçoando 
+                                e expandindo sua área de conhecimento. Atualmente trabalha 
+                                com o back e o frontend.
                             </p>
                             <small>Minhas redes sociais:</small>
-                            <ul>
-                                <li>Twitter</li>
-                                <li>Github</li>
-                                <li>Linkedin</li>
+                            <ul class="socialmedia-list d-flex justify-content-start p-0">
+                                <li>
+                                    <button class="rounded-circle socialmedia-button">
+                                        <a target="_blank" href="https://www.github.com/Dogoso">
+                                            <img class="rounded-circle socialmedia-img" src="src/images/github-icon.png"
+                                                alt="Icone do Github branco">
+                                        </a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="rounded-circle socialmedia-button">
+                                        <a target="_blank" href="https://www.linkedin.com/in/silas-juan-0a0494222/">
+                                            <img class="rounded-circle socialmedia-img"
+                                                src="src/images/linkedin-icon.png" alt="Icone do Github branco">
+                                        </a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="rounded-circle socialmedia-button">
+                                        <a target="_blank" href="https://www.instagram.com/silasdogoso/">
+                                            <img class="rounded-circle socialmedia-img"
+                                                src="src/images/instagram-icon.png" alt="Icone do Github branco">
+                                        </a>
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section class="projetos container p-5 mt-5">
-                <div class="row d-flex justify-content-center">
+            <section id="projetos-div" class="projetos container p-5 mt-5">
+                <div class="row d-flex justify-content-center mb-5">
                     <div class="col-10 text-center">
                         <h2 class="session-font display-5">
-                            Silas transforma estudos em diversão, e amor em projetos.
+                            Silas transforma estudo em diversão, e <span class="golden-focus">amor em projetos</span>.
                         </h2>
                         <p class="desc-text mt-3">
-                            Silas vem criando projetos desde que começou no mundo de TI, 
+                            Silas vem criando projetos desde que começou no mundo de TI,
                             se aprofundando em vários tecnologias do mercado por pura diversão,
                             algumas de suas stacks podem ser conferidas nos projetos abaixo.
                             Seu objetivo? Conseguir aprender muito mais com seus colegas de equipe.
                         </p>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="card col-md-3">
+                        <img src="src/images/mudi.png" class="card-img-top card-img-app" alt="Print de tela do computador da aplicação MUDI">
+                        <div class="card-body">
+                            <h5 class="card-title">MUDI</h5>
+                            <p class="card-text">
+                                Mudi é uma applicação WEB de compra e venda de produtos em 
+                                que os usuários podem entrar em acordos. Feito com Spring 
+                                Framework e Bootstrap.
+                            </p>
+                            <a target="_blank" href="https://github.com/Dogoso/MUDI" class="btn btn-warning">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="src/images/pdf.png" class="card-img-top card-img-app" alt="Print de tela do computador de uma landing page da empresa ficticia Fruta & Fruto">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicação de Relatórios</h5>
+                            <p class="card-text">
+                                A aplicação gera relatórios em PDF de todos os produtos que estão fora de 
+                                estoque usando Spring Data para acessar o banco e a biblioteca iText 
+                                para gerar o PDF com os dados recebidos.
+                            </p>
+                            <a target="_blank" href="https://github.com/Dogoso/RELATORIOS-EM-PDF-COM-SPRING-DATA" class="btn btn-warning">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="src/images/formulario-hibernate.png" class="card-img-top card-img-app" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Formulário com Hibernate</h5>
+                            <p class="card-text">
+                                Formulário completo (Front & Back) em que foram usadas as tecnologias: 
+                                HTML, CSS, JavaScript, Java. Com foco nas Servlets e JSP's e Hibernate JPA.
+                            </p>
+                            <a target="_blank" href="https://github.com/Dogoso/FORM-HIBERNATE" class="btn btn-warning">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card col-md-3">
+                        <img src="src/images/fruta&fruto.png" class="card-img-top card-img-app" alt="Print de tela do computador de uma landing page da empresa ficticia Fruta & Fruto">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruta & Fruto</h5>
+                            <p class="card-text">
+                                O projeto é uma Landing Page de uma marca fictícia chamda Fruto & Fruta. 
+                                Totalmente responsiva e foi criada usando HTML & BOOTSTRAP.
+                            </p>
+                            <a target="_blank" href="https://dogoso.github.io/FRUTAeFRUTO-LANDING-PAGE/" class="btn btn-warning">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="src/images/shibelovespeach.png" class="card-img-top card-img-app" alt="Print de tela do computador da aplicação MUDI">
+                        <div class="card-body">
+                            <h5 class="card-title">Shibe Loves Peach</h5>
+                            <p class="card-text">
+                                Essa é uma landing page desenvolvida para a artista 
+                                <a href="https://twitter.com/ShibeLovesPeach">Shibeeki</a>
+                                para que conheçam mais sobre a vida da artista e para 
+                                expor suas artes digitais.
+                            </p>
+                            <a target="_blank" href="https://shibelovespeach.online/" class="btn btn-warning">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="src/images/android-ld.png" class="card-img-top card-img-app" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">História do Android</h5>
+                            <p class="card-text">
+                                Página única de um site de curiosidades de tecnologia, onde nos é
+                                contada a história do mascote do Android.
+                            </p>
+                            <a target="_blank" href="https://dogoso.github.io/DROID-SITE/" class="btn btn-warning">Visitar</a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="meu-curriculo">
-
+            <section id="curriculo-div" class="meu-curriculo">
+                <div class="row d-flex justify-content-center mb-5">
+                    <div class="col-10 text-center">
+                        <h2 class="session-font display-5">
+                            Baixe meu currículo :)
+                        </h2>
+                        <p class="desc-text mt-3">
+                            Para todas as informações sobre minhas experiências e minha STACK.
+                        </p>
+                        <a href="src/pdf/Curriculo.pdf">Clique aqui.</a>
+                    </div>
+                </div>
             </section>
         </main>
 
-        <footer>
-        
+        <footer class="p-5">
+            <div class="d-flex justify-content-center p-0 m-0">
+                <p>
+                    <a class="contact-email p-0 m-0" href="mailto:juanfsa@live.com">
+                        &#x2709; juanfsa@live.com
+                    </a>
+                </p>
+            </div>
         </footer>
-        
+
     </div>
-    
+
+    <script src="src/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
