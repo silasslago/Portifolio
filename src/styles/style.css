@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+.bg-light {
+    background-color: white !important;
+}
+
 .card {
     max-width: 18rem;
     padding: 0px;
