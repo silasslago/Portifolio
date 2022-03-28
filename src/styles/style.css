@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+@media only screen and (max-width: 575px) {
+    
+    .mobile-margin {
+        margin: 0px !important;
+    }
+
+}
+
 #sobre-mim, #curriculo, #projetos {
     cursor: pointer;
 }
